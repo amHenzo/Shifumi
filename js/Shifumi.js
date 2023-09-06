@@ -1,17 +1,28 @@
 let buttons = document.querySelectorAll("button")
+let result = document.getElementsByClassName("resultat")
 
+    for (let index = 0; index < buttons.length; index++) {
+        
 
-    buttons.forEach(button => {
-
-        button.addEventListener('click',()=>{
+        buttons[index].addEventListener('click',()=>{
+            alert("button clicked! ")
             const bot = Math.random(0,buttons.length);
-            let result = document.getElementsByClassName("resultat")
+            console.log(bot)
+            
+
+            if( index == bot)
+            {
+                result.textContent = "égalité";
+            }
+            else 
+            
             result.textContent = "hello world !";
 
+            
             
 
 
         })
         
-    });
+    };
     //reecrire dans le dom
