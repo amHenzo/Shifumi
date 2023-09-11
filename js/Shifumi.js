@@ -46,15 +46,15 @@ let   nodevalue = document.querySelectorAll("p")
 
     function getresultat(index,bot)
     {
-        result = (bot - index ) % 3 ;
+        result = (bot+ 3 - index ) % 3 ;
 
         console.log(bot + " j = "+ index+" modulo "+ result);
-        if (result == 0 )//si eégalité
+        if (result === 0 )//si eégalité
         {
             return "égualité "
         }
 
-        else if (result == 1 || result == 2 )
+        else if (result === 1 )
         {
 
             return "bot gagne"

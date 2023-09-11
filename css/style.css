@@ -1,4 +1,18 @@
 body {
     background-color: lightblue;
-    align-content: start;
+    
+    align-items: center;
+    
+  }
+  .resultat{
+    color :blue;
+    border: 0.3em solid blue;
+    border-radius: 0.5em;
+    align-self: center;
+  }
+  button{
+    padding: 01em;
+    background-color: blue;
+    color: aliceblue;
+    align-self: center;
   }
