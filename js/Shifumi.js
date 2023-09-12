@@ -9,7 +9,7 @@ console.log(result)
 for(let x=0;x< resulttxt.length;x++)
     {
         let resulttab = document.createElement("p");
-        resulttab.innerText = resulttxt[x];
+        resulttab.textContent = resulttxt[x];
         result.appendChild(resulttab);
             
     }
@@ -27,15 +27,15 @@ let   nodevalue = document.querySelectorAll("p")
             console.log("j :" + index)
             const bot = Math.floor(Math.random(0,buttons.length)*3);
             console.log(bot);
-            nodevalue[0].innerText = resulttxt[0]+  resultType[index];
-            nodevalue[1].innerText = resulttxt[1]+  resultType[bot];
+            nodevalue[0].textContent = resulttxt[0]+  resultType[index];
+            nodevalue[1].textContent = resulttxt[1]+  resultType[bot];
 
-            nodevalue[2].innerText = resulttxt[2]+  getresultat(index,bot);
+            nodevalue[2].textContent = resulttxt[2]+  getresultat(index,bot);
 
             
-                //resulttab[3].innerText = resulttxt[index] + ""+index;
+                //resulttab[3].textContent = resulttxt[index] + ""+index;
 
-                //nodevalue[2].innerText = resulttxt[1]+""+( index - bot);
+                //nodevalue[2].textContent = resulttxt[1]+""+( index - bot);
                 
 
 
